@@ -89,6 +89,9 @@ body{
     animation: pop 0.9s linear;
 }
 
+.heart.fill-color {
+    background: var(--main-color);
+}
 
 @keyframes pop {
     100%{

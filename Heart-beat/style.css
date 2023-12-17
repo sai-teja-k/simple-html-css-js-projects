@@ -51,3 +51,36 @@ body{
     top:-50px;
     right:0;
 }
+
+/* red heart */
+
+.red-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: rotate(45deg);
+    background: var(--main-color);
+}
+
+.red-heart::before,
+.red-heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.red-heart::before {
+    top: 0;
+    left: -50px;
+}
+
+.red-heart::after {
+    top:-50px;
+    right: 0;
+}

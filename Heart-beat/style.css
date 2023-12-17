@@ -84,3 +84,10 @@ body{
     top:-50px;
     right: 0;
 }
+
+@keyframes pop {
+    100%{
+        transform: scale(2) rotate(45deg);
+        opacity: 0;
+    }
+}

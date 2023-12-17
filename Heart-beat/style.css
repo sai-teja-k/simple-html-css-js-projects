@@ -85,6 +85,11 @@ body{
     right: 0;
 }
 
+.red-heart.animation{
+    animation: pop 0.9s linear;
+}
+
+
 @keyframes pop {
     100%{
         transform: scale(2) rotate(45deg);

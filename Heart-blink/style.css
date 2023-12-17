@@ -10,10 +10,11 @@
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    color: #fff;
     background-color: black;
 }
 
@@ -28,7 +29,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: beat 0.8333s linear infinite;
+    animation: beat 0.833s infinite;
 }
 
 .heart::before,
@@ -55,15 +56,11 @@ body{
 }
 
 @keyframes beat {
-    0%{
+    0%,100%{
         transform: scale(1) rotate(45deg);
     }
 
     50%{
         transform: scale(1.5) rotate(45deg);
-    }
-
-    100%{
-        transform: scale(1) rotate(45deg);
     }
 }

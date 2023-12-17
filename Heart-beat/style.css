@@ -19,3 +19,13 @@ body{
 
 /* gray heart */
 
+.gray-heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #fff;
+    transform: rotate(45deg);
+}

@@ -63,6 +63,7 @@ body{
     position: absolute;
     transform: rotate(45deg);
     background: var(--main-color);
+    visibility: hidden;
 }
 
 .red-heart::before,

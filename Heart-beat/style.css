@@ -19,7 +19,7 @@ body{
 
 /* white heart */
 
-.gray-heart{
+.white-heart{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +32,8 @@ body{
     transform: rotate(45deg);
 }
 
-.gray-heart::before,
-.gray-heart::after {
+.white-heart::before,
+.white-heart::after {
     content: "";
     width:100px;
     height: 100px;
@@ -42,12 +42,12 @@ body{
     background: #fff;
 }
 
-.gray-heart::before{
+.white-heart::before{
     top:0;
     left:-50px;
 }
 
-.gray-heart::after{
+.white-heart::after{
     top:-50px;
     right:0;
 }

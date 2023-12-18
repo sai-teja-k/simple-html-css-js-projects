@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap;
     background-color: tomato;
     font-size: 22px;
     font-family: 'Courier New', Courier, monospace;
@@ -19,6 +20,7 @@ ul{
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap;
     padding:10px 0;
     margin-right: 20px;
     border:2px solid black;
@@ -44,4 +46,9 @@ ul li a:hover{
 
 .navbar{
     visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+    transition: visibility 0.5s ease-in;
 }

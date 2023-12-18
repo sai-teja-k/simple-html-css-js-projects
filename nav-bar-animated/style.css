@@ -41,3 +41,7 @@ ul li a:hover{
     background-color: black;
     color: beige;
 }
+
+.navbar{
+    visibility: hidden;
+}

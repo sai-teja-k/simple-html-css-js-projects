@@ -22,7 +22,8 @@ p{
     font-size: 33px;
     font-weight: 800;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #fff;
+    background: var(--main-color);
     text-align: center;
 }
 

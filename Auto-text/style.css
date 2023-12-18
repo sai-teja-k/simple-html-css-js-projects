@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family:sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.js{
+    color: yellow;
+}
+
+.typed-text{
+    color: tomato;
+}
+
+.cursor{
+    background:tomato;
+}

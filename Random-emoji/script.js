@@ -1,27 +1,27 @@
-const emoji = document.querySelector(".emoji");
+const content = document.querySelector(".emoji");
 
-emojis = [ 
-"😇️"
-"😃️"
-"😁️"
-"😍️"
-"😋️"
-"🤥️"
-"😉️"
-"🤗️"
-"😮‍💨️"
-"😗️"
-"😏️"
-"😌️"
-"😪️"
-"🤠️"
-"🥳️"
-"👀️"
-"❤️"
-"🐈️"
-"🐻️"
+emoji = [ 
+"😇️",
+"😃️",
+"😁️",
+"😍️",
+"😋️",
+"🤥️",
+"😉️",
+"🤗️",
+"😮‍💨️",
+"😗️",
+"😏️",
+"😌️",
+"😪️",
+"🤠️",
+"🥳️",
+"👀️",
+"❤️",
+"🐈️",
+"🐻️",
 "🐼️" ];
 
-emoji.addEventListener(onmouseover, () => {
-    
+content.addEventListener('mouseover', () => {
+    content.textContent = emoji[Math.floor(Math.random()*emoji.length)];
 })

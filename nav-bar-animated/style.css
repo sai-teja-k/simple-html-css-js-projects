@@ -23,7 +23,6 @@ body{
     flex-wrap: wrap;
     margin-right: 20px;
     border:2px solid black;
-    border-radius:5px;
     background-color: beige;
 }
 
@@ -48,8 +47,8 @@ button:hover{
     flex-wrap: wrap;
     width: 0;
     height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: width 0.5s ease-in, height 0.5s ease-in;
 }
 
 li{
@@ -61,7 +60,7 @@ li{
     text-decoration:none;
     color: black;
     font-size: 20px;
-    padding:10px;
+    padding:12px;
 }
 
 .navbar li a:hover{
@@ -72,4 +71,6 @@ li{
 .navbar.expanded {
     width: auto;
     height: auto;
+    opacity: 1;
+    transition: all 0.5s ease-in;
 }  

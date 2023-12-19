@@ -1,7 +1,10 @@
-const menu = document.querySelector(".menu");
-
 const navbar = document.querySelector(".navbar");
 
 function toggleMenu() {
-    navbar.classList.toggle("visible")
-}
+    if (navbar.classList.contains("expanded")) {
+      navbar.classList.remove("expanded");
+    }
+    else {
+      navbar.classList.add("expanded");
+    }
+}  

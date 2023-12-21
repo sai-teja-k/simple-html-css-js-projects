@@ -18,12 +18,19 @@ body{
 .card{
     width: 340px;
     height: 450px;
+    perspective: 1000px;
 }
 
 .card .card-content{
     width: 100%;
     height: 100%;
     position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.card:hover .card-content{
+    transform: rotateY(180deg);
 }
 
 .card .card-content .front {
@@ -71,6 +78,8 @@ body{
     padding: 20px;
     border-radius: 10px;
     background: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
 .card .card-content .back .name{
@@ -121,8 +130,8 @@ body{
 }
 
 .card .back .buttons a{
-    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     text-decoration: none;
-    padding: 10px;
-    border-radius:10px;
 }

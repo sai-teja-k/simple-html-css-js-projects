@@ -25,10 +25,11 @@ body{
     justify-content:flex-end;
     align-items: flex-end;
     background-image: url(img/IMG_4446.JPG);
-    background-size: 650px;
-    background-position-x:-130px;
+    background-size: 720px;
+    background-position-x: -190px;
+    background-position-y:-20px;
     border-radius: 10px;
-    box-shadow: 0 0 7px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 7px 5px rgba(0,0,0,0.6);
 }
 
 .card .name {

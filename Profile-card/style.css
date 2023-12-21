@@ -11,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 22px;
     font-family:cursive;
     background: linear-gradient(135deg, #dbe7f6, #9bc7f9);
 }
@@ -41,7 +40,7 @@ body{
     background-position-x: -190px;
     background-position-y:-20px;
     border-radius: 10px;
-    box-shadow: 0 0 7px 5px rgba(0,0,0,0.6);
+    backface-visibility: hidden;
 }
 
 .card .front .name {
@@ -54,6 +53,76 @@ body{
     color: tomato;
 }
 
+.card .front .code {
+    font-size: 22px;
+}
+
 .card .front .code span{
     color: tomato;
+}
+
+/* backside */
+
+.card .card-content .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.card .card-content .back .name{
+    font-size: 50px;
+    font-weight: 800;  
+}
+
+.card .card-content .back p span{
+    font-size: 80px;
+    color: tomato;
+}
+
+.card .card-content .back .code{
+    font-size: 18px;
+}
+
+.card .back .followers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.card .back .followers .count{
+    text-align: center;
+}
+
+.card .back .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card .back .buttons .follow, a{
+    outline: 0;
+    border: 0;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+    background:#4070f4;
+    box-shadow: 0px 8px 10px rgba(120,0,173,0.3);
+    cursor: pointer;
+}
+
+.card .back .buttons a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius:10px;
 }

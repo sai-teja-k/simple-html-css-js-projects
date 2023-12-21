@@ -8,8 +8,6 @@ body{
     width:100vw;
     height:100vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
-    font-weight: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,37 +15,44 @@ body{
 }
 
 .container {
-    max-width: 560px;
+    width:450px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.7);
     background-color: rgb(208, 233, 255);
     padding: 30px;
+    position: relative;
 }
 
 .container .card {
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px 0;
     border-radius: 5px;
-    box-shadow: -2px -2px 5px rgba(0,0,0,0.5);
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.7);
     background-color: aliceblue;
 }
 
-.container .card p {
-    margin:3px;
-}
-
 .container .card .time {
+    margin-bottom: 5px;
     font-size: 30px;
+    font-weight: 800;
 }
 
 .container .colon {
     margin: 0 5px;
     font-size: 30px;
+}
+
+.container .lable{
+    position: absolute;
+    top:30px;
+    right:20px;
+    font-size: 20px;
+    font-weight: 600;
 }
